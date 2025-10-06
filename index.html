@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PRIVATE SERVER HERE</title>
+  <style>
+    :root {
+      /* Set your background image here */
+      --bg-url: url("https://i.imgur.com/jxyqtrV.jpeg");
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-url) center/cover no-repeat;
+      overflow: hidden;
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.05);
+      z-index: 0;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      text-shadow: 0 0 20px white, 0 0 40px white;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .button-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button-label {
+      margin-top: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 10px black;
+    }
+
+    .button {
+      width: 320px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 2px solid white;
+      border-radius: 15px;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: glow 2s infinite alternate;
+      transition: transform 0.3s ease;
+    }
+
+    .button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+
+    .button:hover {
+      transform: scale(1.03);
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+      }
+      100% {
+        box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff, 0 0 90px #00ffff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <h1>MY PRIVATE SERVER HERE</h1>
+
+  <div class="button-container">
+    <div class="button-wrapper">
+      <a href="https://www.roblox.com.ml/games/109983668079237/Steal-a-Brainrot?privateServerLinkCode=22886356794172875107902144729197" class="button" target="_blank">
+        <img src="https://tr.rbxcdn.com/180DAY-32d8d6ed3818d526fef20781f1c68cf9/768/432/Image/Webp/noFilter" alt="Server 1">
+      </a>
+      <p class="button-label">JOIN HERE!</p>
+    </div>
+
+    <div class="button-wrapper">
+      <a href="https://www.roblox.com.ml/games/126884695634066/Grow-a-Garden?privateServerLinkCode=22886356794172875107902144729197" class="button" target="_blank">
+        <img src="https://tr.rbxcdn.com/180DAY-104f3153dfb58bf0d734bfe10b5ac54f/768/432/Image/Webp/noFilter" alt="Server 2">
+      </a>
+      <p class="button-label">JOIN HERE!</p>
+    </div>
+
+    <div class="button-wrapper">
+      <a href="https://www.roblox.com.ml/games/127742093697776/Plants-Vs-Brainrots?privateServerLinkCode=22886356794172875107902144729197" class="button" target="_blank">
+        <img src="https://tr.rbxcdn.com/180DAY-d87ffbfd21b3e4456f965c94145118dd/768/432/Image/Webp/noFilter" alt="Server 3">
+      </a>
+      <p class="button-label">JOIN HERE!</p>
+    </div>
+  </div>
+
+  <script>
+    // If you want to change background or buttons, do it here as the owner:
+    // Example:
+    // document.body.style.backgroundImage = "url('YOUR_NEW_BACKGROUND_LINK')";
+    // document.querySelectorAll('.button img')[0].src = "YOUR_NEW_IMAGE_LINK";
+  </script>
+</body>
+</html>
